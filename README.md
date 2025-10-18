@@ -172,7 +172,7 @@ source .venv/bin/activate && python --version
 
 - [Setup Guide](README.md) - Detailed guide
 - [Quick Reference](QUICK_REFERENCE.md) - Command cheat sheet
-- [UV Documentation](https://github.com/astral-sh/uv)
+- [Poetry Documentation](https://python-poetry.org/docs/)
 
 ## ⚠️ Platform Compatibility
 
@@ -279,7 +279,7 @@ MIT License - See [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - [python-build-standalone](https://github.com/indygreg/python-build-standalone) - Pre-built Python distributions
-- [UV](https://github.com/astral-sh/uv) - Fast Python package installer
+- [Poetry](https://python-poetry.org/) - Python dependency management
 - Built with modern Python best practices
 
 ## 📧 Support
