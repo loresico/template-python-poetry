@@ -1,7 +1,7 @@
 # Python Poetry Template (Always Portable) 🚀
 
 [![Python 3.13](https://img.shields.io/badge/python-3.13-blue.svg)](https://www.python.org/downloads/)
-[![Poetry](https://python-poetry.org)
+[![Poetry](https://python-poetry.org/)
 [![Portable](https://img.shields.io/badge/portable-100%25-green)](https://github.com/indygreg/python-build-standalone)
 
 A professional Python project template that **always uses portable Python** - never relies on system installations.
