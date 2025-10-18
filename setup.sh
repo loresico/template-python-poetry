@@ -50,7 +50,7 @@ echo ""
 # Handle force clean
 if [ "$FORCE_CLEAN" = true ]; then
     echo "🧹 Force clean: Removing all previous installations..."
-    rm -rf "$INSTALL_DIR" "$VENV_DIR" uv.lock
+    rm -rf "$INSTALL_DIR" "$VENV_DIR" poetry.lock
     echo "✅ Clean complete"
     echo ""
 fi
@@ -194,23 +194,23 @@ fi
 # Clean up venv and lock (always)
 echo ""
 echo "🧹 Cleaning up virtual environment and lock files..."
-rm -rf "$VENV_DIR" uv.lock
+rm -rf "$VENV_DIR" poetry.lock
 
 # Create virtual environment
 echo ""
 echo "🔹 Creating virtual environment..."
 "$PYTHON_CMD" -m venv "$VENV_DIR"
 
-# Activate and install UV
-echo "📦 Installing UV..."
+
+# Activate and install Poetry
+echo "📦 Installing Poetry..."
 source "$VENV_DIR/bin/activate"
 pip install --upgrade pip --quiet
-pip install uv --quiet
+pip install poetry --quiet
 
-# Use UV to install dependencies
-echo "📦 Installing project dependencies with UV..."
-uv lock
-uv sync --all-extras
+# Use Poetry to install dependencies
+echo "📦 Installing project dependencies with Poetry..."
+poetry install
 
 echo ""
 echo "✅ Setup complete!"
@@ -218,7 +218,7 @@ echo ""
 echo "📁 Structure:"
 echo "   .python/       - Portable Python $PYTHON_VERSION"
 echo "   .venv/         - Virtual environment"
-echo "   uv.lock        - Locked dependencies"
+echo "   poetry.lock    - Locked dependencies"
 echo ""
 echo "🎯 Next steps:"
 echo ""
