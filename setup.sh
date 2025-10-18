@@ -210,7 +210,7 @@ pip install poetry --quiet
 
 # Use Poetry to install dependencies
 echo "📦 Installing project dependencies with Poetry..."
-poetry install
+poetry install --no-root
 
 echo ""
 echo "✅ Setup complete!"
