@@ -1,4 +1,4 @@
-# Python UV Template (Always Portable) 🚀
+# Python Poetry Template (Always Portable) 🚀
 
 [![Python 3.13](https://img.shields.io/badge/python-3.13-blue.svg)](https://www.python.org/downloads/)
 [![UV](https://img.shields.io/badge/uv-enabled-blue)](https://github.com/astral-sh/uv)
@@ -51,7 +51,7 @@ your-project/
 ├── README.md
 ├── QUICK_REFERENCE.md
 ├── setup.sh         # Setup script
-├── uv.lock
+├── poetry.lock
 └── verify-python-version.sh  # Version checker
 ```
 
@@ -67,8 +67,8 @@ your-project/
 # Add a dependency
 # 1. Edit pyproject.toml
 # 2. Then:
-uv lock
-uv sync
+poetry lock
+poetry sync
 
 ```
 
@@ -79,7 +79,7 @@ uv sync
 1. Downloads pre-built Python 3.13.9 from [python-build-standalone](https://github.com/indygreg/python-build-standalone)
 2. Installs to `.python/` directory
 3. Creates virtual environment in `.venv/`
-4. Installs dependencies with UV
+4. Installs dependencies with poetry
 
 ### Subsequent Runs
 
@@ -90,7 +90,7 @@ uv sync
 
 ### With `--force-clean`
 
-1. Deletes `.python/`, `.venv/`, `uv.lock`
+1. Deletes `.python/`, `.venv/`, `poetry.lock`
 2. Downloads Python 3.13.9 again
 3. Fresh installation
 
@@ -126,7 +126,7 @@ pytest
 
 # Add dependencies
 # Edit pyproject.toml, then:
-uv lock && uv sync
+poetry lock && poetry sync
 
 # If weird issues
 ./setup.sh --force-clean
@@ -217,7 +217,7 @@ This project follows [Conventional Commits](https://www.conventionalcommits.org/
 feat(setup): add Python 3.14 support
 fix(package): correct tar.gz extraction path
 docs(readme): update installation instructions
-chore(deps): upgrade uv to latest version
+chore(deps): upgrade poetry to latest version
 refactor(setup): improve error handling
 ```
 
@@ -285,8 +285,8 @@ MIT License - See [LICENSE](LICENSE) file
 ## 📧 Support
 
 - 📖 [Documentation](SETUP_GUIDE.md)
-- 🐛 [Issues](https://github.com/yourusername/python-uv-template/issues)
-- 💬 [Discussions](https://github.com/yourusername/python-uv-template/discussions)
+- 🐛 [Issues](https://github.com/yourusername/python-poetry-template/issues)
+- 💬 [Discussions](https://github.com/yourusername/python-poetry-template/discussions)
 
 ---
 
