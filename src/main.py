@@ -9,13 +9,13 @@ Replace this with your actual application code.
 def greet(name: str = "World") -> str:
     """
     Return a greeting message.
-    
+
     Args:
         name: Name to greet
-        
+
     Returns:
         Greeting message
-        
+
     Examples:
         >>> greet()
         'Hello, World!'
